@@ -53,12 +53,12 @@ public class Level implements ActionListener{
 	JPanel panelMusic = new JPanel();
 	JPanel Test = new JPanel();
 	
-	Image image1 = new ImageIcon("C:\\Users\\alex\\Documents\\JAVAProjects\\MineSweeper\\bomb.png").getImage();
+	Image image1 = new ImageIcon("game/images/bomb.png").getImage();
 	ImageIcon img1 = new ImageIcon(image1.getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
 	ImageIcon imgbomb = new ImageIcon(image1.getScaledInstance(36, 36, java.awt.Image.SCALE_SMOOTH));
-	Image image2 = new ImageIcon("C:\\Users\\alex\\Documents\\JAVAProjects\\MineSweeper\\playpause.png").getImage();
+	Image image2 = new ImageIcon("game/images/playpause.png").getImage();
 	ImageIcon img2 = new ImageIcon(image2.getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH));
-	Image image3 = new ImageIcon("C:\\Users\\alex\\Documents\\JAVAProjects\\MineSweeper\\flag.png").getImage();
+	Image image3 = new ImageIcon("game/images/flag.png").getImage();
 	ImageIcon imgflag = new ImageIcon(image3.getScaledInstance(36, 36, java.awt.Image.SCALE_SMOOTH));
 	
 	Border labelBorder = BorderFactory.createLineBorder(Color.black);
