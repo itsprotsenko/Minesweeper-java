@@ -39,12 +39,12 @@ public class StartWin implements ActionListener{
 	int frameW = 350;
 	int frameH = 500;
 	//ImageIcon img = new ImageIcon("C:\\Users\\alex\\Documents\\JAVAProjects\\MineSweeper\\bomb.png");
-	Image image1 = new ImageIcon("C:\\Users\\alex\\Documents\\JAVAProjects\\MineSweeper\\bomb.png").getImage();
+	Image image1 = new ImageIcon("game/images/bomb.png").getImage();
 	ImageIcon img1 = new ImageIcon(image1.getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
 	
-	Image image2 = new ImageIcon("C:\\Users\\alex\\Documents\\JAVAProjects\\MineSweeper\\playpause.png").getImage();
+	Image image2 = new ImageIcon("game/images/playpause.png").getImage();
 	ImageIcon img2 = new ImageIcon(image2.getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH));
-	Sound bgMusic = new Sound(new URL("file:C:/Users/alex/Documents/JAVAProjects/MineSweeper/bgMusic.wav"));
+	Sound bgMusic = new Sound(new URL("file:game/images/bgMusic.wav"));
 	public StartWin() throws Exception {
 		bgMusic.reset();
 		bgMusic.loop();
@@ -115,7 +115,7 @@ public class StartWin implements ActionListener{
 		if(e.getSource() == lvlBeginner) {
 			frame.dispose();
 			try {
-				Level lvl = new Level(350, 500, bgMusic.getFrame(),new URL("file:C:/Users/alex/Documents/JAVAProjects/MineSweeper/bgMusic.wav"));
+				Level lvl = new Level(350, 500, bgMusic.getFrame(),new URL("file:game/images/bgMusic.wav"));
 				bgMusic.stop();
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
